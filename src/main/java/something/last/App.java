@@ -23,10 +23,11 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
        XYChart.Series series=new XYChart.Series();
        series.getData().add(new XYChart.Data("1",209));
-       LineChart.getData().addAll(series);
+//       LineChart.getData().addAll(series);
        
         scene = new Scene(loadFXML("primary"), 700, 500);
         stage.setScene(scene);
+        stage.setTitle("Commodities Market Screener");
         stage.show();
         
     }
